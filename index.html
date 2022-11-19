@@ -20,7 +20,7 @@
     fetch('https://api.cryptomus.com/v1/payment/services', {
         method: 'POST', // or 'PUT'
         headers: {
-            "content-type": "application/json",
+            "Content-type": "application/json",
             'merchant:': merchant,
             'sign:': sign,
         },
@@ -33,6 +33,17 @@
         .catch((error) => {
             console.error('Error:', error);
         });
+
+
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://api.cryptomus.com/v1/payment/services', true);
+    xhr.setRequestHeader({'Content-type':'application/json', 'merchant' : merchant, 'sign': sign});
+    xhr.onload = function () {
+        // do something to response
+        console.log(this.responseText);
+    };
+    xhr.send();
 </script>
 
 </body>
