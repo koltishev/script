@@ -39,12 +39,14 @@
 
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://api.cryptomus.com/v1/payment/services', true);
-    xhr.setRequestHeader({'Content-type':'application/json', 'merchant' : merchant, 'sign': sign});
+    xhr.setRequestHeader('Content-type','application/json' );
+    xhr.setRequestHeader('merchant' ,merchant);
+    xhr.setRequestHeader('sign',sign);
     xhr.onload = function () {
         // do something to response
         console.log(this.responseText);
     };
-    xhr.send();
+    xhr.send('');
 </script>
 
 </body>
