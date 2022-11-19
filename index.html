@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    const data = { username: 'example' };
+    var api = 'MVlwC27GqKlgFDg5W3l3ZO2Y7fkYr0q7nV5KVw4fJ6UJLVC62VpBn97p5yForByksNO1sooONsx7sdEXAxPC8c8vMHLQ42Bcg1R7eXUn85Vjsj6TpaUAZCrxifrrMD4g';
+    var merchant = '4a66b59e-763c-4735-9dbb-bf596049be2a';
+    var sign = MD5.generate(api);
+    fetch('https://api.cryptomus.com/v1/payment/services', {
+        method: 'POST', // or 'PUT'
+        headers: {
+            "content-type": "application/json",
+            'merchant:': merchant,
+            'sign:': sign,
+        },
+        body: JSON.stringify(data),
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+</script>
+
+</body>
+</html>
