@@ -12,41 +12,35 @@
 
 <script src="https://cdn.jsdelivr.net/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 <script>
 
-    const data = { username: 'example' };
-    var api = 'RoHfaoeMSY9cGPXs0X1yzMYIrtIdIgJt4FArcNnejDEGB2Em5QxAWlnBWoClLvcqezPXoeR2NquEF5QYfwfi41VMo4KRjUyDJAk9teQju8n5qXQ1MhP7hg2VMBPeS0gp';
-    var merchant = '5093a3a9-9004-4937-ba80-5049fc3f1e5b\n';
-    var sign = MD5.generate(api);
-    fetch('https://api.cryptomus.com/v1/payment/services', {
-        method: 'POST', // or 'PUT'
-        headers: {
-            "Content-type": "application/json",
-            'merchant:': merchant,
-            'sign:': sign,
-        },
-        body: JSON.stringify(data),
-    })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log('Success:', data);
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
-
-
-
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://api.cryptomus.com/v1/payment/services', true);
-    xhr.setRequestHeader('Content-type','application/json' );
-    xhr.setRequestHeader('merchant' ,merchant);
-    xhr.setRequestHeader('sign',sign);
-    xhr.onload = function () {
-        // do something to response
-        console.log(this.responseText);
+var api = 'XnTKR3tPthdGlOqg4jdZ1RmPGOWXM0VDMRLfVltGuDn2ERE6uwWSFFFsfbpHI6dnEnsyt7LJ9T7Tn6ecTHQrYMkkCfmRjuUiZhZ6k957mmgG9w6z1knoLiu0NoNW0l3f';
+   var merchant = 'a2431f33-0646-4e4c-858d-33a3dc3a6434';
+   var sign =  '';
+    var postData = {
+        amount: "15",
+        currency: "USD",
+        order_id: "1"
     };
-    xhr.send('');
+$.ajax({
+    type: 'POST',
+    url: 'https://api.cryptomus.com/v1/payment/services',
+    headers: {
+        "Content-Type":" application/json",
+        "Access-Control-Allow-Origin": "*",
+        'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        "merchant" : merchant,
+        "sign" : sign
+    },
+    data: "amount=15&currency=USD&order_id=1",
+    processData: false,
+    success: function(data) {
+        console.log(data);
+    }
+});
 </script>
 
 </body>

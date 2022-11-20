@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7e212a50-b942-4525-bdb9-74ac5e87e43f" name="Changes" comment="dahjhgjvhjhv">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HmV80kuAy4FQe6xL09C3NavuuM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e212a50-b942-4525-bdb9-74ac5e87e43f" name="Changes" comment="" />
+      <created>1668890082718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668890082718</updated>
+      <workItem from="1668890084475" duration="2549000" />
+      <workItem from="1668967684667" duration="1281000" />
+    </task>
+    <task id="LOCAL-00001" summary="da wdw a">
+      <created>1668890103925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668890103925</updated>
+    </task>
+    <task id="LOCAL-00002" summary="da wdw ad wa">
+      <created>1668890187929</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668890187929</updated>
+    </task>
+    <task id="LOCAL-00003" summary="da wdw ad wadawd">
+      <created>1668890278121</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668890278121</updated>
+    </task>
+    <task id="LOCAL-00004" summary="da wdw ad wadawdda wda">
+      <created>1668890943725</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668890943725</updated>
+    </task>
+    <task id="LOCAL-00005" summary="da wdw ad wadawdda wdadw ad aw">
+      <created>1668891024171</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668891024171</updated>
+    </task>
+    <task id="LOCAL-00006" summary="da wdw ad wadawdda wdadw ad awda wd awd w">
+      <created>1668891241114</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668891241114</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="da wdw a" />
+    <MESSAGE value="da wdw ad wa" />
+    <MESSAGE value="da wdw ad wadawd" />
+    <MESSAGE value="da wdw ad wadawdda wda" />
+    <MESSAGE value="da wdw ad wadawdda wdadw ad aw" />
+    <MESSAGE value="da wdw ad wadawdda wdadw ad awda wd awd w" />
+    <MESSAGE value="dahjhgjvhjhv" />
+    <option name="LAST_COMMIT_MESSAGE" value="dahjhgjvhjhv" />
+  </component>
+</project>
